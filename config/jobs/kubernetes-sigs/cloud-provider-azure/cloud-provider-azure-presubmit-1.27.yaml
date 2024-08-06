@@ -52,6 +52,7 @@ presubmits:
       path_alias: sigs.k8s.io/cluster-api-provider-azure
       workdir: true
     spec:
+      serviceAccountName: azure
       containers:
       - image: gcr.io/k8s-staging-test-infra/kubekins-e2e:v20240803-cf1183f2db-master
         command:
@@ -110,6 +111,7 @@ presubmits:
       path_alias: k8s.io/kubernetes
       workdir: false
     spec:
+      serviceAccountName: azure
       containers:
       - image: gcr.io/k8s-staging-test-infra/kubekins-e2e:v20240803-cf1183f2db-master
         command:
@@ -166,6 +168,7 @@ presubmits:
       path_alias: sigs.k8s.io/cluster-api-provider-azure
       workdir: true
     spec:
+      serviceAccountName: azure
       containers:
       - image: gcr.io/k8s-staging-test-infra/kubekins-e2e:v20240803-cf1183f2db-master
         command:
@@ -203,6 +206,7 @@ presubmits:
     labels:
       preset-service-account: "true"
     spec:
+      serviceAccountName: azure
       containers:
       - image: gcr.io/k8s-staging-test-infra/kubekins-e2e:v20240803-cf1183f2db-master
         command:
@@ -242,6 +246,7 @@ presubmits:
       path_alias: sigs.k8s.io/cluster-api-provider-azure
       workdir: true
     spec:
+      serviceAccountName: azure
       containers:
       - image: gcr.io/k8s-staging-test-infra/kubekins-e2e:v20240803-cf1183f2db-master
         command:
@@ -293,6 +298,7 @@ presubmits:
       path_alias: sigs.k8s.io/cluster-api-provider-azure
       workdir: true
     spec:
+      serviceAccountName: azure
       containers:
       - image: gcr.io/k8s-staging-test-infra/kubekins-e2e:v20240803-cf1183f2db-master
         command:
@@ -344,6 +350,7 @@ presubmits:
       path_alias: sigs.k8s.io/cluster-api-provider-azure
       workdir: true
     spec:
+      serviceAccountName: azure
       containers:
       - image: gcr.io/k8s-staging-test-infra/kubekins-e2e:v20240803-cf1183f2db-master
         command:
@@ -396,6 +403,7 @@ presubmits:
       path_alias: sigs.k8s.io/cluster-api-provider-azure
       workdir: true
     spec:
+      serviceAccountName: azure
       containers:
       - image: gcr.io/k8s-staging-test-infra/kubekins-e2e:v20240803-cf1183f2db-master
         command:
@@ -450,6 +458,7 @@ presubmits:
       path_alias: sigs.k8s.io/cluster-api-provider-azure
       workdir: true
     spec:
+      serviceAccountName: azure
       containers:
       - image: gcr.io/k8s-staging-test-infra/kubekins-e2e:v20240803-cf1183f2db-master
         command:
@@ -519,6 +528,7 @@ periodics:
     path_alias: sigs.k8s.io/cloud-provider-azure
     workdir: false
   spec:
+    serviceAccountName: azure
     containers:
     - image: gcr.io/k8s-staging-test-infra/kubekins-e2e:v20240803-cf1183f2db-master
       command:
@@ -573,6 +583,7 @@ periodics:
     path_alias: sigs.k8s.io/cloud-provider-azure
     workdir: false
   spec:
+    serviceAccountName: azure
     containers:
     - image: gcr.io/k8s-staging-test-infra/kubekins-e2e:v20240803-cf1183f2db-master
       command:
@@ -627,6 +638,7 @@ periodics:
     path_alias: sigs.k8s.io/cloud-provider-azure
     workdir: false
   spec:
+    serviceAccountName: azure
     containers:
     - image: gcr.io/k8s-staging-test-infra/kubekins-e2e:v20240803-cf1183f2db-master
       command:
@@ -681,6 +693,7 @@ periodics:
     path_alias: sigs.k8s.io/cloud-provider-azure
     workdir: false
   spec:
+    serviceAccountName: azure
     containers:
     - image: gcr.io/k8s-staging-test-infra/kubekins-e2e:v20240803-cf1183f2db-master
       command:
